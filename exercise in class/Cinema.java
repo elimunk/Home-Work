@@ -39,10 +39,10 @@ public class Cinema {
         	for (int col = 0; col < seats[row].length; col++) {
         		if (seats[row][col].isSeatTaken())
         		{
-        		System.out.println("Seat " + c +": row "+ 
-        		seats[row][col].getRow()+ " col " + 
-        				seats[row][col].getCol() +", Seat price is: "+ 
-        		seats[row][col].getPrice()+"$");
+        		System.out.println("Seat " + c +
+        				": row "+ seats[row][col].getRow()+ 
+        				" col " + seats[row][col].getCol() +
+        				", Seat price is: "+ seats[row][col].getPrice()+"$");
                         c++;	
                       total+=  seats[row][col].getPrice();
         		}
