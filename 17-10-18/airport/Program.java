@@ -3,8 +3,6 @@ public class Program {
 
 	public static void main(String[] args) {
 
-//            >>>>>>  	create objects by constructor
-
 		Pilot p = new Pilot("Eli", "Munk", "Male", 25, "Israel", 6);
 		FlightAttendant f=new FlightAttendant("Anna", "Munk", "Female", 28, "Israel", "Russia", "Economy");
 		GroundAttendant g = new GroundAttendant("Diana", "Rock", "Fmale", 22, "USA", "India", "Desk");
