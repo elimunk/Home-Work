@@ -6,6 +6,7 @@ public class Pilot extends AirportVisitors {
 
 	int aircraftLicense;
 	int seniority;
+	
 	public Pilot(String firstName, String lastName, String gender, int age, String citizenship,
 			 int seniority) {
 		super(firstName, lastName, gender, age, citizenship);
@@ -13,7 +14,7 @@ public class Pilot extends AirportVisitors {
 		this.seniority = seniority;
 	}
 	
-	
+
 @Override
 public String toString() {
 	return  "\n"+ "Pilot: \n" + super.toString()

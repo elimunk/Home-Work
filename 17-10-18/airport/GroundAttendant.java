@@ -11,6 +11,7 @@ public class GroundAttendant extends AirportVisitors {
 		this.originCountry = originCountry;
 		this.job = job;
 	}
+
 	
 	@Override
 	public String toString() {

@@ -10,6 +10,7 @@ public class FlightAttendant extends AirportVisitors {
 		this.originCountry = originCountry;
 		this.Class = class1;
 	}
+	
 
 @Override
 public String toString() {
