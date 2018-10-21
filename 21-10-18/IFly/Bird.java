@@ -19,7 +19,7 @@ public class Bird implements IFly{
 	
 	@Override
 	public void fly(int speed) {
-		System.out.println("The bird flies at "+ speed+" Mph");
+		System.out.println("The bird flies "+ speed+" Mph");
 	}
 	@Override
 	public boolean land() {

@@ -27,7 +27,7 @@ public void setTarget(String target) {
 
 @Override
 public void fly(int speed) {
-	System.out.println("The plane flies at "+ speed+" Mph");
+	System.out.println("The plane flies "+ speed+" Mph");
 }
 @Override
 public boolean land() {
