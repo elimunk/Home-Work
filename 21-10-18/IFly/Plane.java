@@ -31,11 +31,7 @@ public void fly(int speed) {
 }
 @Override
 public boolean land() {
-	System.out.print("The plane are landed: ");
-	return false;
+	return true;
 }
-
-
-
 
 }
