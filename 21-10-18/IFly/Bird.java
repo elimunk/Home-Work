@@ -23,6 +23,8 @@ public class Bird implements IFly{
 	}
 	@Override
 	public boolean land() {
+		System.out.print("the bird has landed: ");
+
 		return true ;
 		
 	}

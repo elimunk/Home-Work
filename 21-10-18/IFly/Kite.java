@@ -22,6 +22,8 @@ public class Kite implements IFly{
 	}
 	@Override
 	public boolean land() {
+		System.out.print("the kite has landed: ");
+
 		return true;
 	}
 

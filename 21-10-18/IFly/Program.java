@@ -26,8 +26,8 @@ public class Program {
 			System.out.println(i + 1 + ". ");             /* >>---------- create index number -----------*/
 			iflyArray[i] = createIFly();                  /* >>----- create random object by method -----*/
 			iflyArray[i].fly(ran.nextInt(51 - 1) + 1);    /* >>--- create random speed for each object---*/
-			System.out.println("the kite has landed: "    /* >>- call the land method for each object-*/
-			                   +iflyArray[i].land());      
+			System.out.println(iflyArray[i].land());      /* >>- call the land method for each object----*/
+			                         
 		}
 
 	}
