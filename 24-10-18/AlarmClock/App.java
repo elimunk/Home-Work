@@ -1,5 +1,7 @@
 package alarmClock;
 
+import java.sql.Time;
+
 public class App {
 
 	public static void main(String[] args) {
@@ -45,14 +47,15 @@ public class App {
 		System.out.println("ExtentedTime: "+ extentedTime.toSrting()+ "\nAlarm time: "+alarm.getTime().toSrting() );
     	 
     	
-    	int alarmSum=1;
-    	while (alarmSum>0) {
+    	
+    	for (int i = 2; i >0; ) {
     	System.out.println(extentedTime.toSrting());
     	extentedTime.tick();
     	if (alarm.isSet) {
     	if (extentedTime.equals(alarm.getTime())) {
     		System.out.println(extentedTime.toSrting()+" GLING !!!!!!!!! WAKE UP!!!!!!!!!!!!!!!");
-    		alarmSum--; 			
+    		alarm.time.setSecond(alarm.time.getSecond()+alarm.snoozTime);
+    		i--;
     	}
     	}
 	}
