@@ -20,7 +20,10 @@ public class App {
 		
 //		------------------------------------------ equals and printing ----------------------------
 		System.out.println("\nis time1 equals time2: "+time1.equals(time2));
+		
 		time2.setTime(15, 19, 59);
+		System.out.println("set time2: "+time2.toSrting());
+
 		System.out.println("is time1 equals time2: "+time1.equals(time2));
 		
 //      --------------------------------------12/24 hours format & printing------------------------
