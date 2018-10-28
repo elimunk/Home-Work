@@ -47,15 +47,19 @@ public class App {
     	
     	
     	for (int i = 2; i >0; ) {
-    	System.out.println(extentedTime.toSrting());
-    	extentedTime.tick();
-    	if (alarm.isSet) {
-    	if (extentedTime.equals(alarm.getTime())) {
+    	if (!alarm.isSet) {
+        	System.out.println(extentedTime.toSrting());
+        	extentedTime.tick();
+    	}
+        	else	if (extentedTime.equals(alarm.getTime())) {
     		System.out.println(extentedTime.toSrting()+" GLING !!!!!!!!! WAKE UP!!!!!!!!!!!!!!!");
     		alarm.time.setSecond(alarm.time.getSecond()+alarm.snoozTime);
     		i--;
     	}
+        	else 
+        		System.out.println(extentedTime.toSrting());
+    	        extentedTime.tick();
     	}
 	}
-	}
+	
 }
