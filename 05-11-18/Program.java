@@ -26,7 +26,7 @@ public class Program {
 		
         if (pass1.isOverFreeKg()) {
 	    System.out.println("Do you want to pay for the extra weight?");
-}
+
         String answer=scan.nextLine();
 		switch (answer) {
 		case "yes":{
@@ -54,6 +54,7 @@ public class Program {
 		
 	}
 		scan.close();
+        }
 }
 
 }
