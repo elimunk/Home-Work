@@ -32,11 +32,5 @@ public String getNameOfPruduct() {
 public void setNameOfPruduct(String nameOfPruduct) {
 	this.nameOfPruduct = nameOfPruduct;
 }
-
-public void setNameAndWeightOfPruduct(String nameOfPruduct,double weight ) {
-	this.nameOfPruduct = nameOfPruduct;
-	this.weight = (weight>0) ? weight : 0 ;
-}
-	
 	
 }

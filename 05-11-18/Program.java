@@ -24,7 +24,7 @@ public class Program {
 		System.out.println(pass1.toString());
 		System.out.println("Is passenger over free kg: "+pass1.isOverFreeKg());
 		
-        if (pass1.isOverFreeKg()==true) {
+        if (pass1.isOverFreeKg()) {
 	    System.out.println("Do you want to pay for the extra weight?");
 }
         String answer=scan.nextLine();
@@ -33,8 +33,8 @@ public class Program {
 			System.out.println("The price of the extra weight is: "+
 		    (pass1.getSuitcase().getWeightOfSuitcase()-pass1.getTotalFreeKg())*pass1.getPriceForExtraKg());
 			break;
-			
-		}
+		   }
+		
 		case "no":{
 			System.out.println("You must remove items from the suitcase! You need to remove "+
 		(pass1.getSuitcase().getWeightOfSuitcase()-pass1.getTotalFreeKg())+" kg.\n");
@@ -47,9 +47,9 @@ public class Program {
 				}
 				int scn = scan.nextInt();
 				pass1.getSuitcase().getProductInSuitcase().remove(scn);	
-				
-					    
-		}System.out.println("Great! your new Suitcase: "+pass1.getSuitcase().toString());
+		}
+			
+			System.out.println("Great! your new Suitcase: "+pass1.getSuitcase().toString());
 		}
 		
 	}
