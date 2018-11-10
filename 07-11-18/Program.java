@@ -56,13 +56,11 @@ public class Program {
 
 		Queue<Task> bobQueue = new LinkedList<>();
 		bobQueue.add(new Task<>("Buy food", 20));
-		String[] tasksBob = new String[] { "Clean room", "Clean garden" };
-		bobQueue.add(new Task<>(tasksBob, 50));
+		bobQueue.add(new Task<>(new String[] { "Clean room", "Clean garden" }, 50));
 
 		Queue<Task> aliceQueue = new LinkedList<>();
 		aliceQueue.add(new Task<>("Cook food", 20));
-		String[][] tasksAlice = new String[][] { { "Buy drink", "Buy food" }, { "Pay to post", "Pay to bank" } };
-		aliceQueue.add(new Task<>(tasksAlice, 120));
+		aliceQueue.add(new Task<>( new String[][] {{ "Buy drink", "Buy food" }, { "Pay to post", "Pay to bank" }}, 120));
 
 		Hashtable<String, Queue<Task>> tasksList = new Hashtable<>();
 
@@ -70,7 +68,7 @@ public class Program {
 		tasksList.put("Alice", aliceQueue);
 		
 		System.out.println(printHashtable(tasksList, "Bob")+"\n"+printHashtable(tasksList, "Alice"));
-	
+
 		
 	}
 }
