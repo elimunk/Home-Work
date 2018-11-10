@@ -45,7 +45,6 @@ public class Program {
 	}
 	
   public static void printHashtable(Hashtable<String, Queue<Task>> tasksList, String key) {
-		
 		System.out.println( "Name: " +getKeys(tasksList, key)+
 				"\nYour tasks are: "+getTasks(tasksList, key)+
 				"\nTotal duration: "+totalDuration(tasksList.get(key))+ " Minutes"); ;
