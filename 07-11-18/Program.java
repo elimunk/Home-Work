@@ -44,13 +44,14 @@ public class Program {
 	return keys;
 	}
 	
-  public static String printHashtable(Hashtable<String, Queue<Task>> tasksList, String key) {
+  public static void printHashtable(Hashtable<String, Queue<Task>> tasksList, String key) {
 		
-		return"Name: " +getKeys(tasksList, key)+
-		"\nYour tasks are: "+getTasks(tasksList, key)+
-		"\nTotal duration: "+totalDuration(tasksList.get(key))+ " Minutes";
+		System.out.println( "Name: " +getKeys(tasksList, key)+
+				"\nYour tasks are: "+getTasks(tasksList, key)+
+				"\nTotal duration: "+totalDuration(tasksList.get(key))+ " Minutes"); ;
 	}
 	
+  
     public static void main(String[] args) {
     	
 
@@ -67,7 +68,8 @@ public class Program {
 		tasksList.put("Bob", bobQueue);
 		tasksList.put("Alice", aliceQueue);
 		
-		System.out.println(printHashtable(tasksList, "Bob")+"\n"+printHashtable(tasksList, "Alice"));
+		printHashtable(tasksList, "Bob");
+		printHashtable(tasksList, "Alice");
 
 		
 	}
