@@ -53,7 +53,7 @@ public class Program {
   
     public static void main(String[] args) {
     	
-
+ 
 		Queue<Task> bobQueue = new LinkedList<>();
 		bobQueue.add(new Task<>("Buy food", 20));
 		bobQueue.add(new Task<>(new String[] { "Clean room", "Clean garden" }, 50));
