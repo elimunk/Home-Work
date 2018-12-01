@@ -2,8 +2,6 @@ package sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
 import java.util.Random;
 
 public class Program {
@@ -19,19 +17,17 @@ public class Program {
 		}
 		System.out.println("-------------------Before Sorting-------------\n");
 		list.forEach(System.out::println);
-
-		Collections.sort(list);
 		
 		System.out.println("\n-----------------After Age Sort---------------\n");
+		Collections.sort(list);	
 		list.forEach(System.out::println);
-		
-		Collections.sort(list, new StudentGradeSorter());
 		
 		System.out.println("\n-----------------After Grade Sort-------------\n");
+		Collections.sort(list, new StudentGradeSorter());
 		list.forEach(System.out::println);
 			
-		Collections.sort(list, new StudentNameSorter());
 		System.out.println("\n-----------------After Name Sort-------------\n");
+		Collections.sort(list, new StudentNameSorter());
 		list.forEach(System.out::println);
 
 	}
