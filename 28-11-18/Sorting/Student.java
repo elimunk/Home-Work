@@ -1,6 +1,6 @@
 package sorting;
 
-public class Student implements Comparable<Student>{
+public class Student{
 
 	private int grade;
 	private int age;
@@ -37,15 +37,5 @@ public class Student implements Comparable<Student>{
 		return "Name: " + getName()+ ", Grade: "+ getGrade()+
 			", Age: " + getAge();
 	}
-	
-	@Override
-	public int compareTo(Student o) {
-		if(this.age > o.age) {
-			return 1;
-		}
-		if(this.age < o.age) {
-			return -1;
-		}
-		return 0;
-	}
+
 }

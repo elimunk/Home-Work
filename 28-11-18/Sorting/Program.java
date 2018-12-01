@@ -19,7 +19,7 @@ public class Program {
 		list.forEach(System.out::println);
 		
 		System.out.println("\n-----------------After Age Sort---------------\n");
-		Collections.sort(list);	
+		Collections.sort(list, new StudentAgeSorter());	
 		list.forEach(System.out::println);
 		
 		System.out.println("\n-----------------After Grade Sort-------------\n");
