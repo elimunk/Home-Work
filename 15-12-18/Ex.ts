@@ -1,4 +1,3 @@
-var num: number=0;
 var sum: number=0;
 var avg: number=0;
 var biggestNum: number=0;
@@ -12,7 +11,7 @@ var numNegativeNum: number=0;
                                    //---- define the array----
 var array :number[]= new Array<number>(10);
 for (let index = 0; index < array.length; index++) {
-     array[index]=num=Math.floor(Math.random()*200);
+     array[index]=Math.floor(Math.random()*200);
 }
 smallestNum=array[0];
                                       //---- calculate data---- 

@@ -1,4 +1,3 @@
-var num = 0;
 var sum = 0;
 var avg = 0;
 var biggestNum = 0;
@@ -12,7 +11,7 @@ var numNegativeNum = 0;
 //---- define the array----
 var array = new Array(10);
 for (var index = 0; index < array.length; index++) {
-    array[index] = num = Math.floor(Math.random() * 200);
+    array[index] = Math.floor(Math.random() * 200);
 }
 smallestNum = array[0];
 //---- calculate data---- 
