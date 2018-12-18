@@ -7,8 +7,8 @@ var bigIndex = 0;
 var smallIndex = 0;
 var sumEvenNun = 0;
 var sumOddNum = 0;
-var sumPozitiveNum = 0;
-var sumNegativeNum = 0;
+var numPozitiveNum = 0;
+var numNegativeNum = 0;
 //---- define the array----
 var array = new Array(10);
 for (var index = 0; index < array.length; index++) {
@@ -32,9 +32,9 @@ for (var index = 0; index < array.length; index++) {
     if (array[index] % 2 == 1)
         sumOddNum += array[index];
     if (array[index] > 0)
-        sumPozitiveNum += array[index];
+        numPozitiveNum++;
     if (array[index] == 0)
-        sumNegativeNum += array[index];
+        numNegativeNum++;
 }
 //---- print all data----   
 console.log("sum of all numbers is: " + sum);
@@ -45,5 +45,5 @@ console.log("The index of the biggest number in the array is: " + bigIndex);
 console.log("The index of the smallest number in the array is: " + smallIndex);
 console.log("sum of the Even numbers is: " + sumEvenNun);
 console.log("sum of the odd numbers is: " + sumOddNum);
-console.log("sum of the Pozitive numbers is: " + sumPozitiveNum);
-console.log("sum of the Negative numbers is: " + sumNegativeNum);
+console.log("num of the Pozitive numbers is: " + numPozitiveNum);
+console.log("num of the Negative numbers is: " + numNegativeNum);

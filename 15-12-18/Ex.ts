@@ -7,8 +7,8 @@ var bigIndex: number=0;
 var smallIndex: number=0;
 var sumEvenNun: number=0;
 var sumOddNum: number=0;
-var sumPozitiveNum: number=0;
-var sumNegativeNum: number=0;
+var numPozitiveNum: number=0;
+var numNegativeNum: number=0;
                                    //---- define the array----
 var array :number[]= new Array<number>(10);
 for (let index = 0; index < array.length; index++) {
@@ -30,9 +30,9 @@ for (let index = 0; index < array.length; index++) {
     if(array[index]%2==1)
     sumOddNum+=array[index];
     if(array[index]>0)
-    sumPozitiveNum+=array[index];
+    numPozitiveNum++;
     if(array[index]==0)
-    sumNegativeNum+=array[index];
+    numNegativeNum++;
  }
                             //---- print all data----   
  console.log(`sum of all numbers is: ${sum}`);
@@ -43,8 +43,8 @@ for (let index = 0; index < array.length; index++) {
  console.log(`The index of the smallest number in the array is: ${smallIndex}`);
  console.log(`sum of the Even numbers is: ${sumEvenNun}`);
  console.log(`sum of the odd numbers is: ${sumOddNum}`);
- console.log(`sum of the Pozitive numbers is: ${sumPozitiveNum}`);
- console.log(`sum of the Negative numbers is: ${sumNegativeNum}`);
+ console.log(`num of the Pozitive numbers is: ${numPozitiveNum}`);
+ console.log(`num of the Negative numbers is: ${numNegativeNum}`);
 
 
 
