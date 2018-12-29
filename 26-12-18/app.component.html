@@ -1,0 +1,27 @@
+<h1>movie list</h1>
+
+<div>
+<table id= "table1">
+  <tr *ngFor="let m of movies">
+    <td id="d1">{{m.id}}</td>
+    <td id="d2"><button id= "b1"(click)="getMovieDeta(m.movie_name)">{{m.movie_name}}</button></td>
+  </tr>
+</table>
+</div>
+
+<div id ="c2" *ngIf="toShow">
+  <h4>selected movie: {{singelMovie.movie_name}}</h4>
+
+<table border="1">
+  <tr>
+    <td id="t10">Movie name:</td>
+    <td id="t10">Price:</td>
+    <td id="t10" >Date:</td>
+  </tr>
+  <tr>
+    <td id="t10">{{singelMovie.movie_name}}</td>
+    <td id="t10">{{singelMovie.price}}</td>
+    <td id="t10">{{singelMovie.movie_date}}</td>
+  </tr>
+</table>
+</div>
