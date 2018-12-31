@@ -1,0 +1,11 @@
+<h1>welcome to our  market!</h1>
+
+<label><th>search for:</th></label><input type="text" [(ngModel)]="correctChar"/>
+<button (click)="getVeg()">submit</button>
+
+<ul *ngFor="let s of showList">
+  <li>{{s}}</li>
+</ul>
+
+<h3 *ngIf="isChar">Please enter only one character between a-z!</h3>
+<h3 *ngIf="isArrEmpty">No match found. please try again</h3>
