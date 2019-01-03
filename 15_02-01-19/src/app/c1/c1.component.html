@@ -1,0 +1,10 @@
+<h1>movie list</h1>
+
+<div>
+  <table>
+    <tr *ngFor="let m of movies">
+      <td id="d1">{{m.id}}</td>
+      <td id="d2"><button id="b1" (click)="getMovieDeta(m.movie_name)">{{m.movie_name}}</button></td>
+    </tr>
+  </table>
+</div>

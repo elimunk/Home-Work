@@ -1,0 +1,16 @@
+<div id="c2" *ngIf="isShow()">
+  <h4>selected movie: {{myMovieInfo.movie_name}}</h4>
+
+  <table border="1">
+    <tr>
+      <td id="t10">Movie name:</td>
+      <td id="t10">Price:</td>
+      <td id="t10">Date:</td>
+    </tr>
+    <tr>
+      <td id="t10">{{myMovieInfo.selected.movie_name}}</td>
+      <td id="t10">{{myMovieInfo.selected.price}}</td>
+      <td id="t10">{{myMovieInfo.selected.movie_date}}</td>
+    </tr>
+  </table>
+</div>
