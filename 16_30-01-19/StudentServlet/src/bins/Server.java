@@ -81,6 +81,7 @@ public class Server extends HttpServlet {
 		
 // 		print json array
 			response.getWriter().append(jsoa.toString()+"\n");
+			
 			students=new StudentArray().studentList;
 	}
 }
