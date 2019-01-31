@@ -43,6 +43,8 @@ public class Server extends HttpServlet {
 	@SuppressWarnings("unchecked")
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		students=new StudentArray().studentList;
+
 		int minAge = Integer.parseInt(request.getParameter("minAge"));
 		int maxAge = Integer.parseInt(request.getParameter("maxAge"));
 		int minGrade = Integer.parseInt(request.getParameter("minGrade"));		
@@ -63,6 +65,7 @@ public class Server extends HttpServlet {
  		case "ageDesc": Collections.sort(students, new AgeDesc());  break;
  		case "gradeAcd": Collections.sort(students, new GradeAcd());  break;
  		case "gradeDesc": Collections.sort(students, new GradeDesc());  break;
+ 		default : Collections.sort(students); break;
  		}
 	
 		JSONArray jsoa = new JSONArray();
@@ -82,7 +85,6 @@ public class Server extends HttpServlet {
 // 		print json array
 			response.getWriter().append(jsoa.toString()+"\n");
 			
-			students=new StudentArray().studentList;
 	}
 }
 	
