@@ -1,4 +1,4 @@
-package bins;
+package beans;
 
 import java.io.IOException;
 import java.util.ArrayList;

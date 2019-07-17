@@ -1,4 +1,4 @@
-package bins;
+package beans;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package bins;
+package beans;
 
 public class Student implements Comparable<Student>{
 
